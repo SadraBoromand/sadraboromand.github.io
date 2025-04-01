@@ -1,9 +1,10 @@
-<html lang="fa" dir="rtl">
+<html lang="fa" dir="rtl" data-theme="dark" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>محمد صدرا برومند</title>
     <meta name="theme-color" content="#000" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="icon" type="image/x-icon" href="./assets/images/minLogo.png" />
     <meta
       name="description"
@@ -18,7 +19,7 @@
       href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="stylesheet" href="./assets/input.css" />
     <script>
       // On page load or when changing themes, best to add inline in `head` to avoid FOUC
       if (
@@ -32,7 +33,7 @@
       }
     </script>
   </head>
-  <body class="bg-blue-100 dark:bg-gray-900">
+  <body class="dark bg-blue-100 dark:bg-gray-900">
     <!-- navbar -->
     <nav
       class="bg-white dark:bg-gray-900 w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
@@ -42,15 +43,11 @@
       >
         <a
           href="/"
-          class="flex gap-3 items-center space-x-3 rtl:space-x-reverse"
+          class="flex gap-3 flex-wrap items-center space-x-3 rtl:space-x-reverse"
         >
-          <img
-            src="./assets/images/minLogo.png"
-            class="h-8"
-            alt="Flowbite Logo"
-          />
+          <img src="./assets/images/minLogo.png" class="h-8" alt="Sadra Logo" />
           <span
-            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+            class="self-center md:text-xl text-md font-semibold whitespace-nowrap dark:text-white"
             >Mohammad Sadra Boromand</span
           >
         </a>
@@ -226,7 +223,7 @@
         <!-- about -->
         <div
           id="about"
-          class="w-full px-5 col-span-3 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+          class="w-full px-5 md:col-span-3 col-span-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
         >
           <div class="flex flex-col items-right py-8">
             <h2 class="mb-5 text-xl font-medium text-gray-900 dark:text-white">
@@ -783,7 +780,7 @@
               alt="sadra boromand Logo"
             />
             <span
-              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              class="self-center md:text-xl text-md font-semibold whitespace-nowrap dark:text-white"
               >Mohammad Sadra Boromand</span
             >
           </a>
