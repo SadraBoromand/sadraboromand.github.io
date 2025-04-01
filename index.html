@@ -1,4 +1,4 @@
-<html lang="fa" dir="rtl" data-theme="dark" class="dark">
+<html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,24 +20,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/input.css" />
-    <script>
-      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-      if (
-        localStorage.getItem("color-theme") === "dark" ||
-        (!("color-theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ) {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-      }
-    </script>
   </head>
-  <body class="dark bg-blue-100 dark:bg-gray-900">
+  <body class="bg-gray-900">
     <!-- navbar -->
-    <nav
-      class="bg-white dark:bg-gray-900 w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
-    >
+    <nav class="bg-gray-900 w-full z-20 top-0 start-0 border-b border-gray-600">
       <div
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
       >
@@ -47,14 +33,14 @@
         >
           <img src="./assets/images/minLogo.png" class="h-8" alt="Sadra Logo" />
           <span
-            class="self-center md:text-xl text-md font-semibold whitespace-nowrap dark:text-white"
+            class="self-center md:text-xl text-md font-semibold whitespace-nowrap text-white"
             >Mohammad Sadra Boromand</span
           >
         </a>
         <button
           data-collapse-toggle="navbar-sticky"
           type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
           aria-controls="navbar-sticky"
           aria-expanded="false"
         >
@@ -81,53 +67,23 @@
           <a
             href="./assets/sadra.pdf"
             type="button"
-            class="text-white flex items-center gap-3 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            class="text-white flex items-center gap-3 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
           >
             دانلود رزومه
             <i data-lucide="download"></i>
           </a>
-          <button
-            id="theme-toggle"
-            type="button"
-            class="text-gray-500 border dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
-          >
-            <svg
-              id="theme-toggle-dark-icon"
-              class="hidden w-5 h-5"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-              ></path>
-            </svg>
-            <svg
-              id="theme-toggle-light-icon"
-              class="hidden w-5 h-5"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
         </div>
         <div
           class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
           id="navbar-sticky"
         >
           <ul
-            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            class="flex flex-col md:gap-8 p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 bg-gray-900 md:bg-gray-900 border-gray-700"
           >
             <li>
               <a
                 href="#about"
-                class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:text-blue-500"
                 aria-current="page"
                 >درباره من</a
               >
@@ -135,39 +91,39 @@
             <li>
               <a
                 href="#skills"
-                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:hover:text-blue-500 text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700"
                 >مهارت ها</a
               >
             </li>
             <li>
               <a
                 href="#projects"
-                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:hover:text-blue-500 text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700"
                 >پروژه ها</a
               >
             </li>
             <li>
               <a
                 href="#certificates"
-                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:hover:text-blue-500 text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700"
                 >مدارک</a
               >
             </li>
             <li>
               <a
                 href="#blogs"
-                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:hover:text-blue-500 text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700"
                 >بلاگ</a
               >
             </li>
 
-            <li>
+            <!-- <li>
               <a
                 target="_blank"
                 href="#"
-                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:hover:text-blue-500 text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700"
               ></a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -178,25 +134,25 @@
       <!-- image and contact -->
       <section class="grid md:grid-cols-4 grid-cols-1 gap-3 w-full">
         <div
-          class="w-full md:col-span-1 col-span-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+          class="w-full md:col-span-1 col-span-4 border border-gray-200 rounded-lg shadow-sm bg-gray-800 border-gray-700"
         >
           <div class="flex flex-col items-center py-8 w-full">
             <img
-              class="w-32 h-32 mb-3 rounded-full shadow-lg"
+              class="md:w-32 md:h-32 w-40 h-40 mb-3 rounded-full shadow-lg"
               src="./assets/images/69380758.png"
               alt="Sadra Boromand"
             />
-            <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+            <h1 class="mb-1 text-xl font-medium text-gray-900 text-white">
               محمد صدرا برومند
-            </h5>
-            <span class="text-sm text-gray-500 dark:text-gray-400"
+            </h1>
+            <span class="text-sm text-gray-500 text-gray-300"
               >Full Stack Developer and Mobile Developer</span
             >
             <div class="flex flex-wrap gap-3 mt-4 md:mt-6">
               <a
                 target="_blank"
                 href="mailto:sadrabroo@gmail.com"
-                class="py-2 flex gap-3 items-center px-4 ms-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                class="py-2 flex gap-3 items-center px-4 ms-2 text-sm font-medium text-white focus:outline-none bg-gray-800 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 focus:ring-gray-700 bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700"
               >
                 ایمیل
                 <i data-lucide="mail" class="text-xs w-5 h-5"></i>
@@ -204,7 +160,7 @@
               <a
                 target="_blank"
                 href="https://t.me/msbsoft"
-                class="py-2 flex gap-3 items-center px-4 ms-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                class="py-2 flex gap-3 items-center px-4 ms-2 text-sm font-medium text-white focus:outline-none bg-gray-800 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 focus:ring-gray-700 bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700"
               >
                 Telegram
                 <i data-lucide="send" class="text-xs w-5 h-5"></i>
@@ -212,7 +168,7 @@
               <a
                 target="_blank"
                 href="https://www.github.com/msbsoft2/"
-                class="py-2 flex gap-3 items-center px-4 ms-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                class="py-2 flex gap-3 items-center px-4 ms-2 text-sm font-medium text-white focus:outline-none bg-gray-800 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 focus:ring-gray-700 bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700"
               >
                 Github
                 <i data-lucide="Github" class="text-xs w-5 h-5"></i>
@@ -223,13 +179,13 @@
         <!-- about -->
         <div
           id="about"
-          class="w-full px-5 md:col-span-3 col-span-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+          class="w-full px-5 md:col-span-3 col-span-4 bg-gray-800 border border-gray-200 rounded-lg shadow-sm bg-gray-800 border-gray-700"
         >
           <div class="flex flex-col items-right py-8">
-            <h2 class="mb-5 text-xl font-medium text-gray-900 dark:text-white">
+            <h2 class="mb-5 text-xl font-medium text-gray-900 text-white">
               درباره من
             </h2>
-            <p class="mb-1 text-md text-gray-900 dark:text-white">
+            <p class="mb-1 text-md text-gray-900 text-white">
               سلام. من صدرا هستم. من عاشق برنامه نویسی و یادگیری هوش مصنوعی در
               زمینه های مختلف هستم. هر روز تلاش می کنم تا از روز گذشته بیشتر
               بدانم و بیشتر یادبگیرم. من فارغ التحصیل کارشناسی علوم کامپیوتر و
@@ -239,11 +195,11 @@
               انواع کاربردها دارم.
             </p>
 
-            <h2 class="mb-2 mt-5 text-lg text-gray-900 dark:text-white">
+            <h2 class="mb-2 mt-5 text-lg text-gray-900 text-white">
               تحصیلات دانشگاهی:
             </h2>
             <ul
-              class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400"
+              class="max-w-md space-y-1 text-gray-500 list-disc list-inside text-gray-400"
             >
               <li>کارشناسی ارشد گرایش هوش مصنوعی و رباتیک</li>
               <li>کارشناسی علوم کامپیوتر</li>
@@ -288,221 +244,151 @@
       <!-- skills -->
       <div
         id="skills"
-        class="w-full my-3 px-5 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+        class="w-full my-3 px-5 bg-gray-800 border border-gray-200 rounded-lg shadow-sm bg-gray-800 border-gray-700"
       >
         <div class="flex flex-col items-right py-8">
-          <h2 class="mb-5 text-xl font-medium text-gray-900 dark:text-white">
+          <h2 class="mb-5 text-xl font-medium text-gray-900 text-white">
             مهارت ها
           </h2>
           <div
-            class="mb-1 grid md:grid-cols-4 gap-3 text-sm text-center grid-cols-2 text-md text-gray-900 dark:text-white"
+            class="mb-1 grid md:grid-cols-4 gap-3 text-sm text-center grid-cols-2 text-md text-gray-900 text-white"
           >
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>JavaScript</p>
             </div>
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>Microsoft Powerpoint</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>Microsoft Visual Studio</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>Android Studio</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>Microsoft Word</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>MySql</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>C#</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>C++</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>Python</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>ASP.Net</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>Html / CSS</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>JavaScript</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>Android Development</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>T-Sql</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>GIT</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>Django</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>Rest API</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>React</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>Dependency Injection</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>Entity Framework</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>OpenCV</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>Keras</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>React Native</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>.Net Core / .Net</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>TypeScript</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>Next.js</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>RabbitMQ</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>Node.js</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>Crystal Reports</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>PostgreSql</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>Microsoft Excel</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>Sql Server</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>Stimulsoft Report</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>Docker</p>
             </div>
 
-            <div
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
-            >
+            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
               <p>MongoDB</p>
             </div>
           </div>
@@ -512,64 +398,64 @@
       <!-- projects -->
       <div
         id="projects"
-        class="w-full my-3 px-5 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+        class="w-full my-3 px-5 bg-gray-800 border border-gray-200 rounded-lg shadow-sm bg-gray-800 border-gray-700"
       >
         <div class="flex flex-col items-right py-8">
           <h2
-            class="mb-5 flex gap-3 text-xl font-medium text-gray-900 dark:text-white"
+            class="mb-5 flex gap-3 text-xl font-medium text-gray-900 text-white"
           >
             پروژه ها - لینک GitHub
             <i data-lucide="github"></i>
           </h2>
           <div
-            class="mb-1 grid md:grid-cols-2 gap-3 text-sm text-center grid-cols-2 text-md text-gray-900 dark:text-white"
+            class="mb-1 grid md:grid-cols-2 gap-3 text-sm text-center grid-cols-2 text-md text-gray-900 text-white"
           >
             <a
               target="_blank"
               href="https://github.com/sadraboromand/MicroService.BookStore"
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
+              class="border border-gray-200 border-gray-700 rounded-lg p-3"
             >
               <p>MicroService.BookStore</p>
             </a>
             <a
               target="_blank"
               href="https://github.com/sadraboromand/ZenBlog"
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
+              class="border border-gray-200 border-gray-700 rounded-lg p-3"
             >
               <p>ZenBlog</p>
             </a>
             <a
               target="_blank"
               href="https://github.com/sadraboromand/gisooapp"
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
+              class="border border-gray-200 border-gray-700 rounded-lg p-3"
             >
               <p>gisooapp</p>
             </a>
             <a
               target="_blank"
               href="https://github.com/sadraboromand/Accounting"
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
+              class="border border-gray-200 border-gray-700 rounded-lg p-3"
             >
               <p>Accounting</p>
             </a>
             <a
               target="_blank"
               href="https://github.com/sadraboromand/Dakeh.net"
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
+              class="border border-gray-200 border-gray-700 rounded-lg p-3"
             >
               <p>Dakeh.net</p>
             </a>
             <a
               target="_blank"
               href="https://github.com/sadraboromand/SADRA_MOVIES"
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
+              class="border border-gray-200 border-gray-700 rounded-lg p-3"
             >
               <p>SADRA_MOVIES</p>
             </a>
             <a
               target="_blank"
               href="https://github.com/SadraBoromand/SnappFood"
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
+              class="border border-gray-200 border-gray-700 rounded-lg p-3"
             >
               <p>SnappFood</p>
             </a>
@@ -580,17 +466,17 @@
       <!-- certificates -->
       <div
         id="certificates"
-        class="w-full my-3 px-5 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+        class="w-full my-3 px-5 bg-gray-800 border border-gray-200 rounded-lg shadow-sm bg-gray-800 border-gray-700"
       >
         <div class="flex flex-col items-right py-8">
           <h2
-            class="mb-5 flex gap-3 text-xl font-medium text-gray-900 dark:text-white"
+            class="mb-5 flex gap-3 text-xl font-medium text-gray-900 text-white"
           >
             مدارک من
             <i data-lucide="trophy"></i>
           </h2>
           <div
-            class="mb-1 grid md:grid-cols-4 gap-3 text-sm text-center grid-cols-2 text-md text-gray-900 dark:text-white"
+            class="mb-1 grid md:grid-cols-4 gap-3 text-sm text-center grid-cols-2 text-md text-gray-900 text-white"
           >
             <img
               class="max-h-32 w-full transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
@@ -646,22 +532,22 @@
       <!-- blogs -->
       <div
         id="blogs"
-        class="w-full my-3 px-5 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+        class="w-full my-3 px-5 bg-gray-800 border border-gray-200 rounded-lg shadow-sm bg-gray-800 border-gray-700"
       >
         <div class="flex flex-col items-right py-8">
           <h2
-            class="mb-5 flex gap-3 text-xl font-medium text-gray-900 dark:text-white"
+            class="mb-5 flex gap-3 text-xl font-medium text-gray-900 text-white"
           >
             بلاگ های من
             <i data-lucide="rss"></i>
           </h2>
           <div
-            class="mb-1 grid md:grid-cols-2 gap-3 text-sm text-center grid-cols-2 text-md text-gray-900 dark:text-white"
+            class="mb-1 grid md:grid-cols-2 gap-3 text-sm text-center grid-cols-2 text-md text-gray-900 text-white"
           >
             <a
               target="_blank"
               href="https://virgool.io/@sadrabroo/%D9%85%D9%82%D8%A7%DB%8C%D8%B3%D9%87-%D8%B3%D8%A7%D9%85%D8%A7%D9%86%D9%87-%DA%AF%D9%84%D8%B3%D8%AA%D8%A7%D9%86-%D9%88-%D8%B3%D8%A7%D9%85%D8%A7%D9%86%D9%87-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%D8%A7%D8%B1-osmwokpxs7dc"
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
+              class="border border-gray-200 border-gray-700 rounded-lg p-3"
             >
               <p>مقایسه سامانه گلستان و سامانه آموزشیار</p>
             </a>
@@ -669,7 +555,7 @@
             <a
               target="_blank"
               href="https://virgool.io/@sadrabroo/%D9%85%D9%82%D8%A7%DB%8C%D8%B3%D9%87-drizzle-orm-%D9%88-prisma-orm-on1epdmzck4t"
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
+              class="border border-gray-200 border-gray-700 rounded-lg p-3"
             >
               <p>مقایسه Drizzle Orm و Prisma Orm</p>
             </a>
@@ -677,7 +563,7 @@
             <a
               target="_blank"
               href="https://virgool.io/codenevis/baan-clone-mmweibbwovjs"
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
+              class="border border-gray-200 border-gray-700 rounded-lg p-3"
             >
               <p>ساخت clone موبایل بانک ملی - بام</p>
             </a>
@@ -685,7 +571,7 @@
             <a
               target="_blank"
               href="https://virgool.io/@sadrabroo/%DA%86%D8%B1%D8%A7-%D8%A7%D8%B2-%D9%86%D8%B5%D9%81-%D9%82%D8%A7%D8%A8%D9%84%DB%8C%D8%AA-%D9%87%D8%A7%DB%8C-nextjs-%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D9%86%D9%85%DB%8C-%D8%B4%D9%88%D8%AF-dglme4jnktzh"
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
+              class="border border-gray-200 border-gray-700 rounded-lg p-3"
             >
               <p>چرا از نصف قابلیت های Next.js استفاده نمی شود؟</p>
             </a>
@@ -693,7 +579,7 @@
             <a
               target="_blank"
               href="https://virgool.io/@sadrabroo/nextjs-and-prisma-on7ype4rnjia"
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
+              class="border border-gray-200 border-gray-700 rounded-lg p-3"
             >
               <p>تجربه من از Next.js و Prisma</p>
             </a>
@@ -701,7 +587,7 @@
             <a
               target="_blank"
               href="https://virgool.io/@sadrabroo/react-native-simple-or-hard-gjm2rhufxw2p"
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
+              class="border border-gray-200 border-gray-700 rounded-lg p-3"
             >
               <p>سخت یا آسان React Native</p>
             </a>
@@ -709,7 +595,7 @@
             <a
               target="_blank"
               href="https://virgool.io/@sadrabroo/%DB%8C%DA%A9-%D8%B2%D8%A8%D8%A7%D9%86-%D8%A8%D8%B1%D8%A7%DB%8C-backend-%D9%88-ai-jgxva9dfvfa0"
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
+              class="border border-gray-200 border-gray-700 rounded-lg p-3"
             >
               <p>زبان برای Backend ?‍? و Ai ?</p>
             </a>
@@ -717,7 +603,7 @@
             <a
               target="_blank"
               href="https://virgool.io/@sadrabroo/%DA%86%DA%AF%D9%88%D9%86%D9%87-%DB%8C%DA%A9-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3-%D8%A7%D8%B1%D8%B4%D8%AF-%D8%A8%D8%B4%DB%8C%D9%85-oygvoarky2jv"
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
+              class="border border-gray-200 border-gray-700 rounded-lg p-3"
             >
               <p>چگونه یک برنامه نویس ارشد بشیم</p>
             </a>
@@ -725,7 +611,7 @@
             <a
               target="_blank"
               href="https://virgool.io/@sadrabroo/%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D8%A7%D8%B2-reactjs-%D8%A8%D9%87-%D8%AC%D8%A7%DB%8C-nextjs-drxqifau4pcs"
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
+              class="border border-gray-200 border-gray-700 rounded-lg p-3"
             >
               <p>استفاده از React.js به جای Next.js</p>
             </a>
@@ -733,7 +619,7 @@
             <a
               target="_blank"
               href="https://virgool.io/@sadrabroo/%D8%AA%D8%AC%D8%B1%D8%A8%D9%87-%D9%85%D9%86-%D8%A7%D8%B2-%D9%81%D8%B1%DB%8C%D9%85-%D9%88%D8%B1%DA%A9-nextjs-ti6bvkmaryre"
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
+              class="border border-gray-200 border-gray-700 rounded-lg p-3"
             >
               <p>تجربه من از فریم ورک Next.js</p>
             </a>
@@ -741,7 +627,7 @@
             <a
               target="_blank"
               href="https://virgool.io/fboard/%D8%B4%D8%B1%D9%88%D8%B9-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C-%D9%88%D8%B1%D9%88%D8%AF-%D8%A8%D9%87-%D8%AF%D9%86%DB%8C%D8%A7%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C-sdmxihm5gdz5"
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
+              class="border border-gray-200 border-gray-700 rounded-lg p-3"
             >
               <p>شروع برنامه نویسی ، ورود به دنیای برنامه نویسی</p>
             </a>
@@ -749,7 +635,7 @@
             <a
               target="_blank"
               href="https://virgool.io/@sadrabroo/%DB%8C%D8%A7%D8%AF%DA%AF%DB%8C%D8%B1%DB%8C-%D9%85%D8%A7%D8%B4%DB%8C%D9%86-%D8%A8%D8%A7-%D9%BE%D8%A7%DB%8C%D8%AA%D9%88%D9%86-xkhxb6dqhkos"
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
+              class="border border-gray-200 border-gray-700 rounded-lg p-3"
             >
               <p>یادگیری ماشین با پایتون</p>
             </a>
@@ -757,7 +643,7 @@
             <a
               target="_blank"
               href="https://virgool.io/@sadrabroo/%D8%B4%D8%B1%D9%88%D8%B9-%D8%A7%D8%B2-php-%D9%BE%D8%A7%DB%8C%D8%A7%D9%86-%D8%A8%D8%A7-laravel-bzzlppjftvmo"
-              class="border border-gray-200 dark:border-gray-700 rounded-lg p-3"
+              class="border border-gray-200 border-gray-700 rounded-lg p-3"
             >
               <p>شروع از PHP ، پایان با Laravel</p>
             </a>
@@ -767,7 +653,7 @@
       <!-- end blogs -->
     </main>
 
-    <footer class="bg-white rounded-lg shadow-sm dark:bg-gray-900 m-4">
+    <footer class="bg-gray-800 rounded-lg shadow-sm bg-gray-900 m-4">
       <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div class="sm:flex sm:items-center sm:justify-between">
           <a
@@ -780,16 +666,13 @@
               alt="sadra boromand Logo"
             />
             <span
-              class="self-center md:text-xl text-md font-semibold whitespace-nowrap dark:text-white"
+              class="self-center md:text-xl text-md font-semibold whitespace-nowrap text-white"
               >Mohammad Sadra Boromand</span
             >
           </a>
         </div>
-        <hr
-          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
-        />
-        <span
-          class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+        <hr class="my-6 border-gray-200 sm:mx-auto border-gray-700 lg:my-8" />
+        <span class="block text-sm text-gray-500 sm:text-center text-gray-400"
           >© 2025
           <a href="/" class="hover:underline">Mohammad Sadra Boromand™</a>. All
           Rights Reserved.</span
