@@ -1,841 +1,1176 @@
-<html lang="fa" dir="rtl">
+<html lang="fa" dir="rtl" data-bs-theme="auto">
   <head>
+    <!-- seo tags -->
+    <meta name="theme-color" content="#0d6efd" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/minLogo.png" />
+    <meta
+      name="description"
+      content="محمد صدرا برومند ، برنامه نویس فول استک و برنامه نویس اندروید"
+    />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="robots" content="noodp,noydir" />
+    <meta
+      name="keywords"
+      content="MohammadSadraBoromand,Sadra,Broo,Boromand,sadrabroo,محمد صدرا برومند"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <!-- end seo tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>محمد صدرا برومند</title>
-    <meta name="theme-color" content="#000" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="icon" type="image/x-icon" href="./assets/images/minLogo.png" />
-    <meta name="google-site-verification" content="nINsRdkxBZQvstU1qQXW50rXxx4xxdQwNtQlcEj_KIs" />
-    <meta
-      name="description"
-      content="محمد صدرا برومند برنامه نویس فول استک وب و موبایل و برنامه نویس ساخت پلتفرم"
-    />
-    <meta
-      name="og:title"
-      property="og:title"
-      content="محمد صدرا برومند برنامه نویس فول استک وب و موبایل"
-    />
-    <meta
-      name="og:description"
-      content="محمد صدرا برومند برنامه نویس فول استک وب و موبایل و برنامه نویس ساخت پلتفرم"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
-      rel="stylesheet"
-    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/bootstrap.rtl.min.css" />
     <link rel="stylesheet" href="./assets/input.css" />
+    <link
+      rel="stylesheet"
+      href="./bootstrap-icons-1.13.1/bootstrap-icons.min.css"
+    />
+    <style>
+      .bg1 {
+        background: linear-gradient(120deg, #1b4ef7, #b424fc);
+      }
+      .underline {
+        height: 5px;
+        align-self: center;
+        border-radius: 25px;
+      }
+      .text-justify {
+        text-align: justify;
+      }
+      .imgback {
+        width: 100%;
+        border-radius: 1rem;
+      }
+      .service-item:hover {
+        background: #bad6ff;
+      }
+    </style>
   </head>
-  <body class="bg-gray-900">
-    <!-- navbar -->
-    <nav class="bg-gray-900 w-full z-20 top-0 start-0 border-b border-gray-600">
-      <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-      >
-        <a
-          href="/"
-          class="flex gap-3 flex-wrap items-center space-x-3 rtl:space-x-reverse"
-        >
-          <img src="./assets/images/minLogo.png" class="h-8" alt="Sadra Logo" />
-          <span
-            class="self-center md:text-xl text-md font-semibold whitespace-nowrap text-white"
-            >Mohammad Sadra Boromand</span
-          >
-        </a>
+  <body>
+    <nav
+      class="navbar navbar-expand-md bg-body-tertiary border-bottom border-2"
+    >
+      <div class="container">
         <button
-          data-collapse-toggle="navbar-sticky"
+          class="navbar-toggler"
           type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
-          aria-controls="navbar-sticky"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
           aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            class="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="flex gap-3 md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
-        >
-          <a
-            href="./assets/sadra.pdf"
-            type="button"
-            class="text-white flex items-center gap-3 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
-          >
-            دانلود رزومه
-            <i data-lucide="download"></i>
-          </a>
-        </div>
-        <div
-          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-          id="navbar-sticky"
-        >
-          <ul
-            class="flex flex-col md:gap-8 p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 bg-gray-900 md:bg-gray-900 border-gray-700"
-          >
-            <li>
-              <a
-                href="#about"
-                class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:text-blue-500"
-                aria-current="page"
-                >درباره من</a
-              >
-            </li>
-            <li>
-              <a
-                href="#skills"
-                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:hover:text-blue-500 text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700"
-                >مهارت ها</a
-              >
-            </li>
-            <li>
-              <a
-                href="#projects"
-                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:hover:text-blue-500 text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700"
-                >پروژه ها</a
-              >
-            </li>
-            <li>
-              <a
-                href="#certificates"
-                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:hover:text-blue-500 text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700"
-                >مدارک</a
-              >
-            </li>
-            <li>
-              <a
-                href="#workshops"
-                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:hover:text-blue-500 text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700"
-                >کارگاه ها</a
-              >
-            </li>
-            <li>
-              <a
-                href="#blogs"
-                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:hover:text-blue-500 text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700"
-                >بلاگ</a
-              >
-            </li>
+        <a class="navbar-brand" href="/">
+          <img
+            src="./assets/images/minLogo.png"
+            alt="logo"
+            width="50"
+            height="50"
+            loading="lazy"
+          />
+        </a>
 
-            <!-- <li>
-              <a
-                target="_blank"
-                href="#"
-                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:hover:text-blue-500 text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700"
-              ></a>
-            </li> -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#aboutme"
+                >درباره‌من</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#educations">تحصیلات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">مهارت‌ها</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#appreciation">تقدیرنامه‌ها</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certificates">گواهی‌نامه‌ها</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">پروژه‌ها</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#workshops">کارگاه‌ها</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#posts">پست‌ها</a>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button
+            class="btn btn-sm border border-2 dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            تم سایت
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <button
+                class="dropdown-item"
+                type="button"
+                onclick="setTheme('auto');setStoredTheme('auto')"
+              >
+                <i class="bi bi-circle-half"></i>
+                خودکار
+              </button>
+            </li>
+            <li>
+              <button
+                class="dropdown-item"
+                type="button"
+                onclick="setTheme('dark');setStoredTheme('dark')"
+              >
+                <i class="bi bi-moon"></i>
+                تاریک
+              </button>
+            </li>
+            <li>
+              <button
+                class="dropdown-item"
+                type="button"
+                onclick="setTheme('light');setStoredTheme('light')"
+              >
+                <i class="bi bi-sun"></i>
+                روشن
+              </button>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- end navbar -->
-    <!-- container -->
-    <main class="container-lg md:mx-auto px-5 flex-cols gap-4 my-5">
-      <!-- image and contact -->
-      <section class="grid md:grid-cols-4 grid-cols-1 gap-3 w-full">
+
+    <!-- full name and picture -->
+    <main class="container border border-2 my-4 rounded-3">
+      <div class="row">
+        <!-- avatar -->
         <div
-          class="w-full md:col-span-1 col-span-4 border border-gray-200 rounded-lg shadow-sm bg-gray-800 border-gray-700"
+          class="col-md-4 d-flex flex-column justify-content-center align-items-center"
         >
-          <div class="flex flex-col items-center py-8 w-full">
-            <img
-              class="md:w-32 md:h-32 w-40 h-40 mb-3 rounded-full shadow-lg"
-              src="./assets/images/69380758.png"
-              alt="Sadra Boromand"
-            />
-            <h1 class="mb-1 text-xl font-medium text-gray-900 text-white">
-              محمد صدرا برومند
-            </h1>
-            <span class="text-sm text-gray-500 text-gray-300"
-              >Full Stack Developer and Mobile Developer</span
-            >
-            <div class="flex flex-wrap gap-3 mt-4 md:mt-6">
-              <a
-                target="_blank"
-                href="mailto:sadrabroo@gmail.com"
-                class="py-2 flex gap-3 items-center px-4 ms-2 text-sm font-medium text-white focus:outline-none bg-gray-800 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 focus:ring-gray-700 bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700"
-              >
-                ایمیل
-                <i data-lucide="mail" class="text-xs w-5 h-5"></i>
-              </a>
-              <a
-                target="_blank"
-                href="https://t.me/msbsoft"
-                class="py-2 flex gap-3 items-center px-4 ms-2 text-sm font-medium text-white focus:outline-none bg-gray-800 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 focus:ring-gray-700 bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700"
-              >
-                Telegram
-                <i data-lucide="send" class="text-xs w-5 h-5"></i>
-              </a>
-              <a
-                target="_blank"
-                href="https://www.github.com/sadraboromand/"
-                class="py-2 flex gap-3 items-center px-4 ms-2 text-sm font-medium text-white focus:outline-none bg-gray-800 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 focus:ring-gray-700 bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700"
-              >
-                Github
-                <i data-lucide="Github" class="text-xs w-5 h-5"></i>
-              </a>
+          <!-- md and lg size -->
+          <div class="d-none d-sm-block h-100">
+            <div class="d-flex align-items-center h-100">
+              <img
+                src="./assets/background.jpg"
+                alt="background"
+                class="imgback"
+                style="height: 100%; width: 65%"
+              />
+              <img
+                src="./assets/images/69380758.png"
+                alt="Mohammad sadra boromand"
+                loading="lazy"
+                width="150"
+                class="rounded-pill"
+                style="margin-right: -5rem"
+              />
+            </div>
+          </div>
+          <!-- xs and sm size -->
+          <div class="d-sm-none h-100">
+            <div class="d-flex flex-column align-items-center h-100">
+              <img
+                src="./assets/background.jpg"
+                alt="background"
+                class="imgback"
+                width="100%"
+                style="height: 100%"
+              />
+              <img
+                src="./assets/images/69380758.png"
+                alt="Mohammad sadra boromand"
+                loading="lazy"
+                width="180"
+                class="p-2 rounded-pill"
+                style="margin-top: -6rem; margin-bottom: -4rem"
+              />
             </div>
           </div>
         </div>
-        <!-- about -->
-        <div
-          id="about"
-          class="w-full px-5 md:col-span-3 col-span-4 bg-gray-800 border border-gray-200 rounded-lg shadow-sm bg-gray-800 border-gray-700"
-        >
-          <div class="flex flex-col items-right py-8">
-            <h2 class="mb-5 text-xl font-medium text-gray-900 text-white">
-              درباره من
+        <!-- fullname and fields -->
+        <div class="col-md-8 py-5">
+          <!-- show for md -->
+          <div class="d-none d-sm-block">
+            <h1>محمد صدرا برومند</h1>
+            <h2 class="fs-6 fw-semibold text-primary mt-2">
+              توسعه دهنده Full Stack وب و توسعه دهنده موبایل
             </h2>
-            <p class="mb-1 text-md text-gray-400 text-justify">
-              سلام. من صدرا هستم. من عاشق برنامه نویسی و یادگیری هوش مصنوعی در
-              زمینه های مختلف هستم. هر روز تلاش می کنم تا از روز گذشته بیشتر
-              بدانم و بیشتر یادبگیرم. من فارغ التحصیل کارشناسی علوم کامپیوتر و
-              فارغ التحصیل ارشد هوش مصنوعی هستم.
-              <br />
-              بنده تجربه و توانایی ساخت وب اپلیکیشن و موبایل اپلیکیشن را برای
-              انواع کاربردها دارم.
-            </p>
-
-            <h2 class="mb-2 mt-5 text-lg text-white">تحصیلات دانشگاهی:</h2>
-            <ul class="max-w-md space-y-1 text-gray-400 list-disc list-inside">
-              <li>کارشناسی ارشد مهندسی کامپیوتر گرایش هوش مصنوعی و رباتیکز</li>
-              <li>کارشناسی علوم کامپیوتر</li>
-            </ul>
-
-            <div class="flex flex-wrap gap-5 mt-6">
-              <img
-                class="w-16"
-                src="./assets/images/LazyLoad/LL (1).png"
-                alt="LL 1"
-              />
-              <img
-                class="w-16"
-                src="./assets/images/LazyLoad/LL (2).png"
-                alt="LL 2"
-              />
-              <img
-                class="w-16"
-                src="./assets/images/LazyLoad/LL (3).png"
-                alt="LL 3"
-              />
-              <img
-                class="w-16"
-                src="./assets/images/LazyLoad/LL (4).png"
-                alt="LL 4"
-              />
-              <img
-                class="w-16"
-                src="./assets/images/LazyLoad/LL (5).png"
-                alt="LL 5"
-              />
-              <img
-                class="w-16"
-                src="./assets/images/LazyLoad/LL (6).png"
-                alt="LL 6"
-              />
-            </div>
           </div>
-        </div>
-        <!-- end about -->
-      </section>
-      <!-- skills -->
-      <div
-        id="skills"
-        class="w-full my-3 px-5 bg-gray-800 border border-gray-200 rounded-lg shadow-sm bg-gray-800 border-gray-700"
-      >
-        <div class="flex flex-col items-right py-8">
-          <h2 class="mb-5 text-xl font-medium text-gray-900 text-white">
-            مهارت ها
-          </h2>
+          <!-- show for sm -->
+          <div class="d-sm-none d-flex flex-column mt-4 align-items-center">
+            <h1>محمد صدرا برومند</h1>
+            <h2 class="fs-6 fw-semibold text-primary mt-2">
+              توسعه دهنده Full Stack وب و توسعه دهنده موبایل
+            </h2>
+          </div>
+          <!-- show images -->
           <div
-            class="mb-1 grid md:grid-cols-4 gap-3 text-sm text-center grid-cols-2 text-md text-gray-900 text-white"
-          >
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>JavaScript</p>
-            </div>
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>Microsoft Powerpoint</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>Microsoft Visual Studio</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>Android Studio</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>Microsoft Word</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>MySql</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>C#</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>C++</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>Python</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>ASP.Net</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>Html / CSS</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>JavaScript</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>Android Development</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>T-Sql</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>GIT</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>Django</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>Rest API</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>React</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>Dependency Injection</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>Entity Framework</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>OpenCV</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>Keras</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>React Native</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>.Net Core / .Net</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>TypeScript</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>Next.js</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>RabbitMQ</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>Node.js</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>Crystal Reports</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>PostgreSql</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>Microsoft Excel</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>Sql Server</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>Stimulsoft Report</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>Docker</p>
-            </div>
-
-            <div class="border border-gray-200 border-gray-700 rounded-lg p-3">
-              <p>MongoDB</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end skills -->
-      <!-- projects -->
-      <div
-        id="projects"
-        class="w-full my-3 px-5 bg-gray-800 border border-gray-200 rounded-lg shadow-sm bg-gray-800 border-gray-700"
-      >
-        <div class="flex flex-col items-right py-8">
-          <h2
-            class="mb-5 flex gap-3 text-xl font-medium text-gray-900 text-white"
-          >
-            پروژه ها - لینک GitHub
-            <i data-lucide="github"></i>
-          </h2>
-          <div class="md:px-20">
-            <p class="my-4 text-white">
-              در این بخش لینک پروژه های بنده در زمینه های می باشد
-            </p>
-            <ul class="list-disc text-white flex flex-col gap-5 px-4 mb-10">
-              <li>هوش مصنوعی شامل بینایی کامپیوتر و یادگیری ماشین</li>
-              <li>اپلیکیشن های تحت موبایل (Cross Platform)</li>
-              <li>اپلیکیشن های تحت وب (Full Stack)</li>
-            </ul>
-          </div>
-          <div
-            class="mb-1 grid md:grid-cols-2 gap-3 text-sm text-center grid-cols-1 text-md text-gray-900 text-white"
-          >
-            <a
-              target="_blank"
-              href="https://github.com/SadraBoromand/Diabetes-Prediction-App"
-              class="border border-gray-200 border-gray-700 rounded-lg p-3"
-            >
-              <p class="text-lg">Diabetes Prediction - ML</p>
-              <p class="mt-4 text-gray-400 text-md">
-                Django , Machine Learning , Scikit learn
-              </p>
-            </a>
-            <a
-              target="_blank"
-              href="https://github.com/SadraBoromand/Computer.Vision.with.OpenCV.and.Deep.Learning"
-              class="border border-gray-200 border-gray-700 rounded-lg p-3"
-            >
-              <p class="text-lg">OpenCV with Python</p>
-              <p class="mt-4 text-gray-400 text-md">
-                OpenCV , Numpy, Matplotlib, Image Processing
-              </p>
-            </a>
-            <a
-              target="_blank"
-              href="https://github.com/SadraBoromand/SnappFood"
-              class="border border-gray-200 border-gray-700 rounded-lg p-3"
-            >
-              <p class="text-lg">SnappFood</p>
-              <p class="mt-4 text-gray-400 text-md">
-                Django Rest framework, React.js
-              </p>
-            </a>
-            <a
-              target="_blank"
-              href="https://github.com/SadraBoromand/SADRA_MOVIES_REACT_NATIVE"
-              class="border border-gray-200 border-gray-700 rounded-lg p-3"
-            >
-              <p class="text-lg">Movies Mobile App</p>
-              <p class="mt-4 text-gray-400 text-md">
-                React Native, React navigation
-              </p>
-            </a>
-            <a
-              target="_blank"
-              href="https://github.com/sadraboromand/MicroService.BookStore"
-              class="border border-gray-200 border-gray-700 rounded-lg p-3"
-            >
-              <p class="text-lg">MicroService.BookStore</p>
-              <p class="mt-4 text-gray-400 text-md">
-                Asp .net Core (MVC,WebAPI) , RabbitMQ, Ef Core, SQL Server
-              </p>
-            </a>
-            <a
-              target="_blank"
-              href="https://github.com/sadraboromand/ZenBlog"
-              class="border border-gray-200 border-gray-700 rounded-lg p-3"
-            >
-              <p class="text-lg">ZenBlog</p>
-              <p class="mt-4 text-gray-400 text-md">
-                Asp .net Core (MVC) , Ef Core, SQL Server
-              </p>
-            </a>
-            <a
-              target="_blank"
-              href="https://github.com/sadraboromand/gisooapp"
-              class="border border-gray-200 border-gray-700 rounded-lg p-3"
-            >
-              <p class="text-lg">gisooapp</p>
-              <p class="mt-4 text-gray-400 text-md">
-                Asp .net Core (MVC) , Ef Core, SQL Server
-              </p>
-            </a>
-            <a
-              target="_blank"
-              href="https://github.com/sadraboromand/Accounting"
-              class="border border-gray-200 border-gray-700 rounded-lg p-3"
-            >
-              <p class="text-lg">Accounting</p>
-              <p class="mt-4 text-gray-400 text-md">Windows Form, SQL Server</p>
-            </a>
-            <a
-              target="_blank"
-              href="https://github.com/sadraboromand/Dakeh.net"
-              class="border border-gray-200 border-gray-700 rounded-lg p-3"
-            >
-              <p class="text-lg">Dakeh.net</p>
-              <p class="mt-4 text-gray-400 text-md">
-                Asp .net Core (MVC) , Ef Core, SQL Server
-              </p>
-            </a>
-            <a
-              target="_blank"
-              href="https://github.com/sadraboromand/SADRA_MOVIES"
-              class="border border-gray-200 border-gray-700 rounded-lg p-3"
-            >
-              <p class="text-lg">SADRA_MOVIES</p>
-              <p class="mt-4 text-gray-400 text-md">Bootstrap, UI kit</p>
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- end projects -->
-      <!-- certificates -->
-      <div
-        id="certificates"
-        class="w-full my-3 px-5 bg-gray-800 border border-gray-200 rounded-lg shadow-sm bg-gray-800 border-gray-700"
-      >
-        <div class="flex flex-col items-right py-8">
-          <h2
-            class="mb-5 flex gap-3 text-xl font-medium text-gray-900 text-white"
-          >
-            مدارک من
-            <i data-lucide="trophy"></i>
-          </h2>
-          <div
-            class="mb-1 grid md:grid-cols-4 gap-3 text-sm text-center grid-cols-1 text-md text-gray-900 text-white"
+            class="d-flex flex-row justify-content-evenly flex-wrap gap-4 mt-4"
           >
             <img
-              class="w-full transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
-              src="./assets/images/certificates/CPP.jpg"
-              alt="CPP.jpg"
+              src="./assets/images/LazyLoad/LL (1).png"
+              class="img img-thumbnail"
+              alt="LL 1"
+              width="45"
+              loading="lazy"
             />
-
             <img
-              class="w-full transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
-              src="./assets/images/certificates/CSharp.jpg"
-              alt="CSharp.jpg"
+              src="./assets/images/LazyLoad/LL (2).png"
+              class="img img-thumbnail"
+              alt="LL 2"
+              width="40"
+              height="40"
+              loading="lazy"
             />
-
             <img
-              class="w-full transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
-              src="./assets/images/certificates/HTML.jpg"
-              alt="HTML.jpg"
+              src="./assets/images/LazyLoad/LL (3).png"
+              class="img img-thumbnail"
+              alt="LL 3"
+              width="40"
+              height="40"
+              loading="lazy"
             />
-
             <img
-              class="w-full transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
-              src="./assets/images/certificates/tf.jpg"
-              alt="Tenworflow"
+              src="./assets/images/LazyLoad/LL (4).png"
+              class="img img-thumbnail"
+              alt="LL 4"
+              width="40"
+              height="40"
+              loading="lazy"
             />
-
             <img
-              class="w-full transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
-              src="./assets/images/certificates/python.jpg"
-              alt="python"
+              src="./assets/images/LazyLoad/LL (5).png"
+              class="img img-thumbnail"
+              alt="LL 5"
+              width="40"
+              height="40"
+              loading="lazy"
             />
-
             <img
-              class="w-full transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
-              src="./assets/images/certificates/JS.jpg"
-              alt="JS.jpg"
-            />
-
-            <img
-              class="w-full transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
-              src="./assets/images/certificates/ml1.jpg"
-              alt="ml1.jpg"
-            />
-
-            <img
-              class="w-full transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
-              src="./assets/images/certificates/Responsive Web Design.jpg"
-              alt="Responsive Web Design.jpg"
-            />
-
-            <img
-              class="w-full transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
-              src="./assets/images/certificates/SQL.jpg"
-              alt="SQL.jpg"
+              src="./assets/images/LazyLoad/LL (6).png"
+              class="img img-thumbnail"
+              alt="LL 6"
+              width="40"
+              height="40"
+              loading="lazy"
             />
           </div>
         </div>
       </div>
-      <!-- end certificates -->
-      <!-- workshops -->
-      <div
-        id="workshops"
-        class="w-full my-3 px-5 bg-gray-800 border border-gray-200 rounded-lg shadow-sm bg-gray-800 border-gray-700"
-      >
-        <div class="flex flex-col items-right py-8">
-          <h2
-            class="mb-5 flex gap-3 text-xl font-medium text-gray-900 text-white"
-          >
-            کارگاه های من
-            <i data-lucide="shapes"></i>
-          </h2>
-          <div
-            class="mb-1 grid md:grid-cols-4 gap-4 text-sm text-center grid-cols-2 text-md text-gray-900 text-white"
-          >
-          <img class="rounded-lg" src="./assets/images/workshops/ws (2).jpg" alt="workshop">
-           <img class="rounded-lg" src="./assets/images/workshops/ws (1).jpg" alt="workshop">
-          </div>
-        </div>
-      </div>
-      <!-- end workshop -->
-      <!-- blogs -->
-      <div
-        id="blogs"
-        class="w-full my-3 px-5 bg-gray-800 border border-gray-200 rounded-lg shadow-sm bg-gray-800 border-gray-700"
-      >
-        <div class="flex flex-col items-right py-8">
-          <h2
-            class="mb-5 flex gap-3 text-xl font-medium text-gray-900 text-white"
-          >
-            بلاگ های من
-            <i data-lucide="rss"></i>
-          </h2>
-          <div
-            class="mb-1 grid md:grid-cols-2 gap-3 text-sm text-center grid-cols-1 text-md text-gray-900 text-white"
-          >
-            <a
-              target="_blank"
-              href="https://virgool.io/@sadrabroo/%D9%85%D9%82%D8%A7%DB%8C%D8%B3%D9%87-%D8%B3%D8%A7%D9%85%D8%A7%D9%86%D9%87-%DA%AF%D9%84%D8%B3%D8%AA%D8%A7%D9%86-%D9%88-%D8%B3%D8%A7%D9%85%D8%A7%D9%86%D9%87-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%D8%A7%D8%B1-osmwokpxs7dc"
-              class="border border-gray-200 border-gray-700 rounded-lg p-3 flex items-center gap-5"
-            >
-              <i data-lucide="bookmark-check"></i>
-              <p>مقایسه سامانه گلستان و سامانه آموزشیار</p>
-            </a>
-
-            <a
-              target="_blank"
-              href="https://virgool.io/@sadrabroo/%D9%85%D9%82%D8%A7%DB%8C%D8%B3%D9%87-drizzle-orm-%D9%88-prisma-orm-on1epdmzck4t"
-              class="border border-gray-200 border-gray-700 rounded-lg p-3 flex items-center gap-5"
-            >
-              <i data-lucide="bookmark-check"></i>
-              <p>مقایسه Drizzle Orm و Prisma Orm</p>
-            </a>
-
-            <a
-              target="_blank"
-              href="https://virgool.io/codenevis/baan-clone-mmweibbwovjs"
-              class="border border-gray-200 border-gray-700 rounded-lg p-3 flex items-center gap-5"
-            >
-              <i data-lucide="bookmark-check"></i>
-              <p>ساخت clone موبایل بانک ملی - بام</p>
-            </a>
-
-            <a
-              target="_blank"
-              href="https://virgool.io/@sadrabroo/%DA%86%D8%B1%D8%A7-%D8%A7%D8%B2-%D9%86%D8%B5%D9%81-%D9%82%D8%A7%D8%A8%D9%84%DB%8C%D8%AA-%D9%87%D8%A7%DB%8C-nextjs-%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D9%86%D9%85%DB%8C-%D8%B4%D9%88%D8%AF-dglme4jnktzh"
-              class="border border-gray-200 border-gray-700 rounded-lg p-3 flex items-center gap-5"
-            >
-              <i data-lucide="bookmark-check"></i>
-              <p>چرا از نصف قابلیت های Next.js استفاده نمی شود؟</p>
-            </a>
-
-            <a
-              target="_blank"
-              href="https://virgool.io/@sadrabroo/nextjs-and-prisma-on7ype4rnjia"
-              class="border border-gray-200 border-gray-700 rounded-lg p-3 flex items-center gap-5"
-            >
-              <i data-lucide="bookmark-check"></i>
-              <p>تجربه من از Next.js و Prisma</p>
-            </a>
-
-            <a
-              target="_blank"
-              href="https://virgool.io/@sadrabroo/react-native-simple-or-hard-gjm2rhufxw2p"
-              class="border border-gray-200 border-gray-700 rounded-lg p-3 flex items-center gap-5"
-            >
-              <i data-lucide="bookmark-check"></i>
-              <p>سخت یا آسان React Native</p>
-            </a>
-
-            <a
-              target="_blank"
-              href="https://virgool.io/@sadrabroo/%DB%8C%DA%A9-%D8%B2%D8%A8%D8%A7%D9%86-%D8%A8%D8%B1%D8%A7%DB%8C-backend-%D9%88-ai-jgxva9dfvfa0"
-              class="border border-gray-200 border-gray-700 rounded-lg p-3 flex items-center gap-5"
-            >
-              <i data-lucide="bookmark-check"></i>
-              <p>زبان برای Backend ?‍? و Ai ?</p>
-            </a>
-
-            <a
-              target="_blank"
-              href="https://virgool.io/@sadrabroo/%DA%86%DA%AF%D9%88%D9%86%D9%87-%DB%8C%DA%A9-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3-%D8%A7%D8%B1%D8%B4%D8%AF-%D8%A8%D8%B4%DB%8C%D9%85-oygvoarky2jv"
-              class="border border-gray-200 border-gray-700 rounded-lg p-3 flex items-center gap-5"
-            >
-              <i data-lucide="bookmark-check"></i>
-              <p>چگونه یک برنامه نویس ارشد بشیم</p>
-            </a>
-
-            <a
-              target="_blank"
-              href="https://virgool.io/@sadrabroo/%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D8%A7%D8%B2-reactjs-%D8%A8%D9%87-%D8%AC%D8%A7%DB%8C-nextjs-drxqifau4pcs"
-              class="border border-gray-200 border-gray-700 rounded-lg p-3 flex items-center gap-5"
-            >
-              <i data-lucide="bookmark-check"></i>
-              <p>استفاده از React.js به جای Next.js</p>
-            </a>
-
-            <a
-              target="_blank"
-              href="https://virgool.io/@sadrabroo/%D8%AA%D8%AC%D8%B1%D8%A8%D9%87-%D9%85%D9%86-%D8%A7%D8%B2-%D9%81%D8%B1%DB%8C%D9%85-%D9%88%D8%B1%DA%A9-nextjs-ti6bvkmaryre"
-              class="border border-gray-200 border-gray-700 rounded-lg p-3 flex items-center gap-5"
-            >
-              <i data-lucide="bookmark-check"></i>
-              <p>تجربه من از فریم ورک Next.js</p>
-            </a>
-
-            <a
-              target="_blank"
-              href="https://virgool.io/fboard/%D8%B4%D8%B1%D9%88%D8%B9-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C-%D9%88%D8%B1%D9%88%D8%AF-%D8%A8%D9%87-%D8%AF%D9%86%DB%8C%D8%A7%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C-sdmxihm5gdz5"
-              class="border border-gray-200 border-gray-700 rounded-lg p-3 flex items-center gap-5"
-            >
-              <i data-lucide="bookmark-check"></i>
-              <p>شروع برنامه نویسی ، ورود به دنیای برنامه نویسی</p>
-            </a>
-
-            <a
-              target="_blank"
-              href="https://virgool.io/@sadrabroo/%DB%8C%D8%A7%D8%AF%DA%AF%DB%8C%D8%B1%DB%8C-%D9%85%D8%A7%D8%B4%DB%8C%D9%86-%D8%A8%D8%A7-%D9%BE%D8%A7%DB%8C%D8%AA%D9%88%D9%86-xkhxb6dqhkos"
-              class="border border-gray-200 border-gray-700 rounded-lg p-3 flex items-center gap-5"
-            >
-              <i data-lucide="bookmark-check"></i>
-              <p>یادگیری ماشین با پایتون</p>
-            </a>
-
-            <a
-              target="_blank"
-              href="https://virgool.io/@sadrabroo/%D8%B4%D8%B1%D9%88%D8%B9-%D8%A7%D8%B2-php-%D9%BE%D8%A7%DB%8C%D8%A7%D9%86-%D8%A8%D8%A7-laravel-bzzlppjftvmo"
-              class="border border-gray-200 border-gray-700 rounded-lg p-3 flex items-center gap-5"
-            >
-              <i data-lucide="bookmark-check"></i>
-              <p>شروع از PHP ، پایان با Laravel</p>
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- end blogs -->
     </main>
 
-    <footer class="bg-gray-800 rounded-lg shadow-sm bg-gray-900 m-4">
-      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div class="sm:flex sm:items-center sm:justify-between">
+    <!-- contact me -->
+    <section class="bg-body-tertiary text-center py-4">
+      <p>راه های ارتباطی:</p>
+      <div class="container px-5">
+        <div class="row align-items-center justify-content-evenly">
           <a
-            href="/"
-            class="flex items-center gap-3 mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+            class="col-md-3 col-3 mb-3 text-primary"
+            href="https://linkedin.com/sadrabroo"
+            ><i class="bi bi-linkedin fs-3"></i
+          ></a>
+          <a
+            class="col-md-3 col-3 mb-3 text-dark bg-white p-1 rounded-3"
+            href="https://www.github.com/sadraboromand/"
+            ><i class="bi bi-github fs-3"></i
+          ></a>
+          <a
+            class="col-md-3 col-3 mb-3 text-danger"
+            href="mailto:sadrabroo@gmail.com"
+            ><i class="bi bi-envelope-at-fill fs-3"></i
+          ></a>
+          <a
+            class="col-md-3 col-12 mb-3 btn btn-outline-primary"
+            href="./assets/sadra.pdf"
           >
-            <img
-              src="./assets/images/minLogo.png"
-              class="h-8"
-              alt="sadra boromand Logo"
-            />
-            <span
-              class="self-center md:text-xl text-md font-semibold whitespace-nowrap text-white"
-              >Mohammad Sadra Boromand</span
+            <i class="bi bi-download px-2"></i>
+            دانلود فایل رزومه</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- about me -->
+    <section class="container-sm px-5 py-5 my-4">
+      <h2 class="fs-4 text-center text-muted">درباره من</h2>
+      <hr class="bg1 underline" />
+      <p class="text-justify">
+        سلام. من صدرا هستم. من عاشق برنامه نویسی و یادگیری هوش مصنوعی در زمینه
+        های مختلف هستم. هر روز تلاش می کنم تا از روز گذشته بیشتر بدانم و بیشتر
+        یادبگیرم.
+        <br />
+        برنامه نویسی برای من ورود به دنیایی به دور از رفتارهای ناپسند بشری هست.
+        دنیایی آزاد که می توانم در آن ایده های داخل ذهنم را خلق کنم.
+        <br />
+        من فارغ التحصیل کارشناسی علوم کامپیوتر و فارغ التحصیل ارشد هوش مصنوعی
+        هستم. بنده تجربه و توانایی ساخت وب اپلیکیشن و موبایل اپلیکیشن را برای
+        انواع کاربردها دارم.
+      </p>
+    </section>
+
+    <!-- education -->
+    <section
+      id="educations"
+      class="container border border-2 px-3 py-5 my-4 rounded-3"
+    >
+      <p class="fs-4">تحصیلات:</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">مقطع تحصیلی</th>
+            <th scope="col">رشته</th>
+            <th scope="col">دانشگاه</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>کارشناسی ارشد</th>
+            <td>مهندسی کامپیوتر - گرایش هوش مصنوعی</td>
+            <td>دانشگاه آزاد اصفهان</td>
+          </tr>
+          <tr>
+            <th>کارشناسی</th>
+            <td>علوم کامپیوتر</td>
+            <td>دانشگاه اصفهان</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="fs-5 fw-light">زمینه های تحقیقاتی مورد علاقه:</p>
+      <ul>
+        <li>Agent AI</li>
+        <li>GAN AI</li>
+        <li>Deep Learning (ANN & CNN)</li>
+        <li>Machine Learning</li>
+        <li>Computer Vision</li>
+        <li>Image Processing (OpenCV)</li>
+      </ul>
+    </section>
+
+    <div class="bg1 py-4"></div>
+
+    <!-- skills -->
+    <section
+      id="skills"
+      class="container border border-2 px-3 py-5 my-4 rounded-3"
+    >
+      <p class="fs-4">مهارت ها:</p>
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">زبان برنامه نویسی</th>
+            <th scope="col">کتابخانه / فریم ورک</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Python</th>
+            <td class="d-flex flex-wrap gap-2">
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Machine learning</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Deep learning</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Image Processing</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Tensorflow / Keras</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Pytorch</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >OpenCV</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Sci-kit learn</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Sci-kit Image</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Numpy</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Matplotlib</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Pandas</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Seaborn</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Django - Intermediate</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Fastapi - Beginner</span
+              >
+              <!-- end skill item -->
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">C# / C Sharp</th>
+            <td class="d-flex flex-wrap gap-2">
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >DotNet Core</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Asp.Net MVC</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Asp.Net Web API</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Windows Forms</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >EF Core</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Razor</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Microsoft Visual Studio</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >VS Code</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Dependency Injection</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Floant API</span
+              >
+              <!-- end skill item -->
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">DataBase</th>
+            <td class="d-flex flex-wrap gap-2">
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >PostgreSql</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Sql Server</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >SQLite</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >PhpMyAdmin</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >MongoDB</span
+              >
+              <!-- end skill item -->
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">JavaScript and TypeScript</th>
+            <td class="d-flex flex-wrap gap-2">
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Next.js</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Expo</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >React Native</span
+              >
+              <!-- end skill item -->
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Common</th>
+            <td class="d-flex flex-wrap gap-2">
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Docker</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Git / GitHub</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Tailwind</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Bootstrap</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Powerpoint</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Word</span
+              >
+              <!-- end skill item -->
+
+              <!-- skill item -->
+              <span
+                class="border border-2 border-primary ml-1 p-2 rounded-2 fs-6"
+                >Html / CSS</span
+              >
+              <!-- end skill item -->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- services -->
+    <section class="bg-body-tertiary">
+      <section class="container py-5 my-4">
+        <h2 class="fs-4 text-center text-muted">خدمات من</h2>
+        <hr class="bg1 underline" />
+        <div class="row">
+          <!-- service item -->
+          <div class="col-md-3 col-6 mb-3">
+            <div
+              class="service-item d-flex flex-column gap-3 justify-content-center align-items-center py-3 border border-2 border-primary rounded-3"
             >
+              <i
+                class="bi bi-pen-fill bg-primary text-white p-4 rounded-4 fs-3"
+                style="width: fit-content"
+              ></i>
+              <p class="fs-6 fw-semibold text-primary">تدریس</p>
+            </div>
+          </div>
+          <!-- service item -->
+          <div class="col-md-3 col-6 mb-3">
+            <div
+              class="service-item d-flex flex-column gap-3 justify-content-center align-items-center py-3 border border-2 border-primary rounded-3"
+            >
+              <i
+                class="bi bi-person-fill bg-primary text-white p-4 rounded-4 fs-3"
+                style="width: fit-content"
+              ></i>
+              <p class="fs-6 fw-semibold text-primary">مشاوره</p>
+            </div>
+          </div>
+          <!-- service item -->
+          <div class="col-md-3 col-6 mb-3">
+            <div
+              class="service-item d-flex flex-column gap-3 justify-content-center align-items-center py-3 border border-2 border-primary rounded-3"
+            >
+              <i
+                class="bi bi-mouse-fill bg-primary text-white p-4 rounded-4 fs-3"
+                style="width: fit-content"
+              ></i>
+              <p class="fs-6 fw-semibold text-primary">تولید نرم افزار</p>
+            </div>
+          </div>
+          <!-- service item -->
+          <div class="col-md-3 col-6 mb-3">
+            <div
+              class="service-item d-flex flex-column gap-3 justify-content-center align-items-center py-3 border border-2 border-primary rounded-3"
+            >
+              <i
+                class="bi bi-megaphone-fill bg-primary text-white p-4 rounded-4 fs-3"
+                style="width: fit-content"
+              ></i>
+              <p class="fs-6 fw-semibold text-primary">
+                برگزاری دوره های آنلاین
+              </p>
+            </div>
+          </div>
+          <!-- service item -->
+          <div class="col-md-3 col-6 mb-3">
+            <div
+              class="service-item d-flex flex-column gap-3 justify-content-center align-items-center py-3 border border-2 border-primary rounded-3"
+            >
+              <i
+                class="bi bi-people-fill bg-primary text-white p-4 rounded-4 fs-3"
+                style="width: fit-content"
+              ></i>
+              <p class="fs-6 fw-semibold text-primary">
+                مدیریت پروژه و مدیریت تیم
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- تقدیرنامه ها -->
+    <section
+      id="appreciation"
+      class="container border border-2 px-3 py-5 my-4 rounded-3"
+    >
+      <p class="fs-4">تقدیر نامه ها:</p>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <img
+            src="./assets/images/tagdirname/t (1).jpg"
+            class="img-fluid img-thumbnail"
+            alt="تقدیرنامه"
+          />
+        </div>
+        <div class="col-md-4 mb-3">
+          <img
+            src="./assets/images/tagdirname/t (2).jpg"
+            class="img-fluid img-thumbnail"
+            alt="تقدیرنامه"
+          />
+        </div>
+        <div class="col-md-4 mb-3">
+          <img
+            src="./assets/images/tagdirname/t (3).jpg"
+            class="img-fluid img-thumbnail"
+            alt="تقدیرنامه"
+          />
+        </div>
+      </div>
+    </section>
+
+    <div class="bg1 py-4"></div>
+
+    <!-- certificates -->
+    <section
+      id="certificates"
+      class="container border border-2 px-3 py-5 my-4 rounded-3"
+    >
+      <p class="fs-4">گواهی نامه ها:</p>
+      <div class="row">
+        <div class="col-md-3 col-6 mb-3">
+          <img
+            src="./assets/images/certificates/CPP.jpg"
+            class="img-fluid img-thumbnail"
+            alt="CPP.jpg"
+          />
+        </div>
+
+        <div class="col-md-3 col-6 mb-3">
+          <img
+            src="./assets/images/certificates/CSharp.jpg"
+            class="img-fluid img-thumbnail"
+            alt="CSharp.jpg"
+          />
+        </div>
+
+        <div class="col-md-3 col-6 mb-3">
+          <img
+            src="./assets/images/certificates/HTML.jpg"
+            class="img-fluid img-thumbnail"
+            alt="HTML.jpg"
+          />
+        </div>
+
+        <div class="col-md-3 col-6 mb-3">
+          <img
+            src="./assets/images/certificates/IranianRed.jpg"
+            class="img-fluid img-thumbnail"
+            alt="IranianRed.jpg"
+          />
+        </div>
+
+        <div class="col-md-3 col-6 mb-3">
+          <img
+            src="./assets/images/certificates/JS.jpg"
+            class="img-fluid img-thumbnail"
+            alt="JS.jpg"
+          />
+        </div>
+
+        <div class="col-md-3 col-6 mb-3">
+          <img
+            src="./assets/images/certificates/ml1.jpg"
+            class="img-fluid img-thumbnail"
+            alt="ml1.jpg"
+          />
+        </div>
+
+        <div class="col-md-3 col-6 mb-3">
+          <img
+            src="./assets/images/certificates/python.jpg"
+            class="img-fluid img-thumbnail"
+            alt="python.jpg"
+          />
+        </div>
+
+        <div class="col-md-3 col-6 mb-3">
+          <img
+            src="./assets/images/certificates/Responsive Web Design.jpg"
+            class="img-fluid img-thumbnail"
+            alt="Responsive Web Design.jpg"
+          />
+        </div>
+
+        <div class="col-md-3 col-6 mb-3">
+          <img
+            src="./assets/images/certificates/SQL.jpg"
+            class="img-fluid img-thumbnail"
+            alt="SQL.jpg"
+          />
+        </div>
+
+        <div class="col-md-3 col-6 mb-3">
+          <img
+            src="./assets/images/certificates/tf.jpg"
+            class="img-fluid img-thumbnail"
+            alt="tf.jpg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- projects -->
+    <section id="projects" class="container py-5 my-4">
+      <h2 class="fs-4 text-center text-muted">پروژه ها</h2>
+      <hr class="bg1 underline" />
+      <p class="my-4 fw-semibold">
+        در این بخش لینک پروژه های بنده در زمینه های زیر می باشد
+      </p>
+      <ul class="d-flex flex-column gap-3">
+        <li>هوش مصنوعی شامل بینایی کامپیوتر و یادگیری ماشین</li>
+        <li>اپلیکیشن های تحت موبایل (Cross Platform)</li>
+        <li>اپلیکیشن های تحت وب (Full Stack)</li>
+      </ul>
+      <div class="row fs-6">
+        <a
+          target="_blank"
+          href="https://github.com/SadraBoromand/Diabetes-Prediction-App"
+          class="service-item text-primary border-bottom border-primary col-md-4 p-3 text-decoration-none"
+        >
+          <p class="fw-semibold">
+            <i class="bi bi-star-fill mx-2"></i>Title: Diabetes Prediction - ML
+          </p>
+          <p class="mt-2 fs-6">Django , Machine Learning , Scikit learn</p>
+        </a>
+        <a
+          target="_blank"
+          href="https://github.com/SadraBoromand/Computer.Vision.with.OpenCV.and.Deep.Learning"
+          class="service-item text-primary border-bottom border-primary col-md-4 p-3 text-decoration-none"
+        >
+          <p class="fw-semibold">
+            <i class="bi bi-star-fill mx-2"></i>Title:OpenCV with Python
+          </p>
+          <p class="mt-2 fs-6">OpenCV , Numpy, Matplotlib, Image Processing</p>
+        </a>
+        <a
+          target="_blank"
+          href="https://github.com/SadraBoromand/SnappFood"
+          class="service-item text-primary border-bottom border-primary col-md-4 p-3 text-decoration-none"
+        >
+          <p class="fw-semibold">
+            <i class="bi bi-star-fill mx-2"></i>Title:SnappFood
+          </p>
+          <p class="mt-2 fs-6">Django Rest framework, React.js</p>
+        </a>
+        <a
+          target="_blank"
+          href="https://github.com/SadraBoromand/SADRA_MOVIES_REACT_NATIVE"
+          class="service-item text-primary border-bottom border-primary col-md-4 p-3 text-decoration-none"
+        >
+          <p class="fw-semibold">
+            <i class="bi bi-star-fill mx-2"></i>Title:Movies Mobile App
+          </p>
+          <p class="mt-2 fs-6">React Native, React navigation</p>
+        </a>
+        <a
+          target="_blank"
+          href="https://github.com/sadraboromand/MicroService.BookStore"
+          class="service-item text-primary border-bottom border-primary col-md-4 p-3 text-decoration-none"
+        >
+          <p class="fw-semibold">
+            <i class="bi bi-star-fill mx-2"></i>Title:MicroService.BookStore
+          </p>
+          <p class="mt-2 fs-6">
+            Asp .net Core (MVC,WebAPI) , RabbitMQ, Ef Core, SQL Server
+          </p>
+        </a>
+        <a
+          target="_blank"
+          href="https://github.com/sadraboromand/ZenBlog"
+          class="service-item text-primary border-bottom border-primary col-md-4 p-3 text-decoration-none"
+        >
+          <p class="fw-semibold">
+            <i class="bi bi-star-fill mx-2"></i>Title:ZenBlog
+          </p>
+          <p class="mt-2 fs-6">Asp .net Core (MVC) , Ef Core, SQL Server</p>
+        </a>
+        <a
+          target="_blank"
+          href="https://github.com/sadraboromand/gisooapp"
+          class="service-item text-primary border-bottom border-primary col-md-4 p-3 text-decoration-none"
+        >
+          <p class="fw-semibold">
+            <i class="bi bi-star-fill mx-2"></i>Title:gisooapp
+          </p>
+          <p class="mt-2 fs-6">Asp .net Core (MVC) , Ef Core, SQL Server</p>
+        </a>
+        <a
+          target="_blank"
+          href="https://github.com/sadraboromand/Accounting"
+          class="service-item text-primary border-bottom border-primary col-md-4 p-3 text-decoration-none"
+        >
+          <p class="fw-semibold">
+            <i class="bi bi-star-fill mx-2"></i>Title:Accounting
+          </p>
+          <p class="mt-2 fs-6">Windows Form, SQL Server</p>
+        </a>
+        <a
+          target="_blank"
+          href="https://github.com/sadraboromand/Dakeh.net"
+          class="service-item text-primary border-bottom border-primary col-md-4 p-3 text-decoration-none"
+        >
+          <p class="fw-semibold">
+            <i class="bi bi-star-fill mx-2"></i>Title:Dakeh.net
+          </p>
+          <p class="mt-2 fs-6">Asp .net Core (MVC) , Ef Core, SQL Server</p>
+        </a>
+        <a
+          target="_blank"
+          href="https://github.com/sadraboromand/SADRA_MOVIES"
+          class="service-item text-primary border-bottom border-primary col-md-4 p-3 text-decoration-none"
+        >
+          <p class="fw-semibold">
+            <i class="bi bi-star-fill mx-2"></i>Title:SADRA_MOVIES
+          </p>
+          <p class="mt-2 fs-6">Bootstrap, UI kit</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- کارگاه ها -->
+    <section
+      id="workshops"
+      class="container border border-2 px-3 py-5 my-4 rounded-3"
+    >
+      <p class="fs-4">کارگاه ها:</p>
+      <div class="row">
+        <div class="col-md-3 col-6 mb-3">
+          <img
+            src="./assets/images/workshops/ws (1).jpg"
+            class="img-fluid img-thumbnail"
+            alt="کارگاه"
+          />
+        </div>
+        <div class="col-md-3 col-6 mb-3">
+          <img
+            src="./assets/images/workshops/ws (2).jpg"
+            class="img-fluid img-thumbnail"
+            alt="کارگاه"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- blogs -->
+    <section id="posts" class="container py-5 my-4">
+      <h2 class="fs-4 text-center text-muted">پست های من</h2>
+      <hr class="bg1 underline" />
+      <div
+        class="row text-sm text-center grid-cols-1 text-md text-gray-900 text-white"
+      >
+        <div class="col-md-6 p-2">
+          <a
+            target="_blank"
+            href="https://virgool.io/@sadrabroo/%D9%85%D9%82%D8%A7%DB%8C%D8%B3%D9%87-%D8%B3%D8%A7%D9%85%D8%A7%D9%86%D9%87-%DA%AF%D9%84%D8%B3%D8%AA%D8%A7%D9%86-%D9%88-%D8%B3%D8%A7%D9%85%D8%A7%D9%86%D9%87-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%D8%A7%D8%B1-osmwokpxs7dc"
+            class="text-decoration-none border border-2 rounded-2 p-3 d-flex align-items-center gap-3"
+          >
+            <i class="bi bi-bookmark-check fs-4 fw-semibold"></i>
+            <p>مقایسه سامانه گلستان و سامانه آموزشیار</p>
           </a>
         </div>
-        <hr class="my-6 border-gray-200 sm:mx-auto border-gray-700 lg:my-8" />
-        <span class="block text-sm text-gray-500 sm:text-center text-gray-400"
-          >© 2025
-          <a href="/" class="hover:underline">Mohammad Sadra Boromand™</a>. All
-          Rights Reserved.</span
-        >
+
+        <div class="col-md-6 p-2">
+          <a
+            target="_blank"
+            href="https://virgool.io/@sadrabroo/%D9%85%D9%82%D8%A7%DB%8C%D8%B3%D9%87-drizzle-orm-%D9%88-prisma-orm-on1epdmzck4t"
+            class="text-decoration-none border border-2 rounded-2 p-3 d-flex align-items-center gap-3"
+          >
+            <i class="bi bi-bookmark-check fs-4 fw-semibold"></i>
+            <p>مقایسه Drizzle Orm و Prisma Orm</p>
+          </a>
+        </div>
+
+        <div class="col-md-6 p-2">
+          <a
+            target="_blank"
+            href="https://virgool.io/codenevis/baan-clone-mmweibbwovjs"
+            class="text-decoration-none border border-2 rounded-2 p-3 d-flex align-items-center gap-3"
+          >
+            <i class="bi bi-bookmark-check fs-4 fw-semibold"></i>
+            <p>ساخت clone موبایل بانک ملی - بام</p>
+          </a>
+        </div>
+
+        <div class="col-md-6 p-2">
+          <a
+            target="_blank"
+            href="https://virgool.io/@sadrabroo/%DA%86%D8%B1%D8%A7-%D8%A7%D8%B2-%D9%86%D8%B5%D9%81-%D9%82%D8%A7%D8%A8%D9%84%DB%8C%D8%AA-%D9%87%D8%A7%DB%8C-nextjs-%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D9%86%D9%85%DB%8C-%D8%B4%D9%88%D8%AF-dglme4jnktzh"
+            class="text-decoration-none border border-2 rounded-2 p-3 d-flex align-items-center gap-3"
+          >
+            <i class="bi bi-bookmark-check fs-4 fw-semibold"></i>
+            <p>چرا از نصف قابلیت های Next.js استفاده نمی شود؟</p>
+          </a>
+        </div>
+
+        <div class="col-md-6 p-2">
+          <a
+            target="_blank"
+            href="https://virgool.io/@sadrabroo/nextjs-and-prisma-on7ype4rnjia"
+            class="text-decoration-none border border-2 rounded-2 p-3 d-flex align-items-center gap-3"
+          >
+            <i class="bi bi-bookmark-check fs-4 fw-semibold"></i>
+            <p>تجربه من از Next.js و Prisma</p>
+          </a>
+        </div>
+
+        <div class="col-md-6 p-2">
+          <a
+            target="_blank"
+            href="https://virgool.io/@sadrabroo/react-native-simple-or-hard-gjm2rhufxw2p"
+            class="text-decoration-none border border-2 rounded-2 p-3 d-flex align-items-center gap-3"
+          >
+            <i class="bi bi-bookmark-check fs-4 fw-semibold"></i>
+            <p>سخت یا آسان React Native</p>
+          </a>
+        </div>
+
+        <div class="col-md-6 p-2">
+          <a
+            target="_blank"
+            href="https://virgool.io/@sadrabroo/%DB%8C%DA%A9-%D8%B2%D8%A8%D8%A7%D9%86-%D8%A8%D8%B1%D8%A7%DB%8C-backend-%D9%88-ai-jgxva9dfvfa0"
+            class="text-decoration-none border border-2 rounded-2 p-3 d-flex align-items-center gap-3"
+          >
+            <i class="bi bi-bookmark-check fs-4 fw-semibold"></i>
+            <p>زبان برای Backend ?‍? و Ai ?</p>
+          </a>
+        </div>
+
+        <div class="col-md-6 p-2">
+          <a
+            target="_blank"
+            href="https://virgool.io/@sadrabroo/%DA%86%DA%AF%D9%88%D9%86%D9%87-%DB%8C%DA%A9-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3-%D8%A7%D8%B1%D8%B4%D8%AF-%D8%A8%D8%B4%DB%8C%D9%85-oygvoarky2jv"
+            class="text-decoration-none border border-2 rounded-2 p-3 d-flex align-items-center gap-3"
+          >
+            <i class="bi bi-bookmark-check fs-4 fw-semibold"></i>
+            <p>چگونه یک برنامه نویس ارشد بشیم</p>
+          </a>
+        </div>
+
+        <div class="col-md-6 p-2">
+          <a
+            target="_blank"
+            href="https://virgool.io/@sadrabroo/%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D8%A7%D8%B2-reactjs-%D8%A8%D9%87-%D8%AC%D8%A7%DB%8C-nextjs-drxqifau4pcs"
+            class="text-decoration-none border border-2 rounded-2 p-3 d-flex align-items-center gap-3"
+          >
+            <i class="bi bi-bookmark-check fs-4 fw-semibold"></i>
+            <p>استفاده از React.js به جای Next.js</p>
+          </a>
+        </div>
+
+        <div class="col-md-6 p-2">
+          <a
+            target="_blank"
+            href="https://virgool.io/@sadrabroo/%D8%AA%D8%AC%D8%B1%D8%A8%D9%87-%D9%85%D9%86-%D8%A7%D8%B2-%D9%81%D8%B1%DB%8C%D9%85-%D9%88%D8%B1%DA%A9-nextjs-ti6bvkmaryre"
+            class="text-decoration-none border border-2 rounded-2 p-3 d-flex align-items-center gap-3"
+          >
+            <i class="bi bi-bookmark-check fs-4 fw-semibold"></i>
+            <p>تجربه من از فریم ورک Next.js</p>
+          </a>
+        </div>
+
+        <div class="col-md-6 p-2">
+          <a
+            target="_blank"
+            href="https://virgool.io/fboard/%D8%B4%D8%B1%D9%88%D8%B9-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C-%D9%88%D8%B1%D9%88%D8%AF-%D8%A8%D9%87-%D8%AF%D9%86%DB%8C%D8%A7%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C-sdmxihm5gdz5"
+            class="text-decoration-none border border-2 rounded-2 p-3 d-flex align-items-center gap-3"
+          >
+            <i class="bi bi-bookmark-check fs-4 fw-semibold"></i>
+            <p>شروع برنامه نویسی ، ورود به دنیای برنامه نویسی</p>
+          </a>
+        </div>
+
+        <div class="col-md-6 p-2">
+          <a
+            target="_blank"
+            href="https://virgool.io/@sadrabroo/%DB%8C%D8%A7%D8%AF%DA%AF%DB%8C%D8%B1%DB%8C-%D9%85%D8%A7%D8%B4%DB%8C%D9%86-%D8%A8%D8%A7-%D9%BE%D8%A7%DB%8C%D8%AA%D9%88%D9%86-xkhxb6dqhkos"
+            class="text-decoration-none border border-2 rounded-2 p-3 d-flex align-items-center gap-3"
+          >
+            <i class="bi bi-bookmark-check fs-4 fw-semibold"></i>
+            <p>یادگیری ماشین با پایتون</p>
+          </a>
+        </div>
+
+        <div class="col-md-6 p-2">
+          <a
+            target="_blank"
+            href="https://virgool.io/@sadrabroo/%D8%B4%D8%B1%D9%88%D8%B9-%D8%A7%D8%B2-php-%D9%BE%D8%A7%DB%8C%D8%A7%D9%86-%D8%A8%D8%A7-laravel-bzzlppjftvmo"
+            class="text-decoration-none border border-2 rounded-2 p-3 d-flex align-items-center gap-3"
+          >
+            <i class="bi bi-bookmark-check fs-4 fw-semibold"></i>
+            <p>شروع از PHP ، پایان با Laravel</p>
+          </a>
+        </div>
       </div>
+    </section>
+
+    <footer class="bg-body-tertiary text-center py-3 mb-0 border-top border-2">
+      <p class="container-sm px-5">
+        تمامی حقوق مادی و معنوی وب سایت متعلق به
+        <strong class="text-danger">محمد صدرا برومند</strong>
+        می باشد. &copy;
+      </p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
-      lucide.createIcons();
-
-      var themeToggleDarkIcon = document.getElementById(
-        "theme-toggle-dark-icon"
-      );
-      var themeToggleLightIcon = document.getElementById(
-        "theme-toggle-light-icon"
-      );
-
-      // Change the icons inside the button based on previous settings
-      if (
-        localStorage.getItem("color-theme") === "dark" ||
-        (!("color-theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ) {
-        themeToggleLightIcon.classList.remove("hidden");
-      } else {
-        themeToggleDarkIcon.classList.remove("hidden");
-      }
-
-      var themeToggleBtn = document.getElementById("theme-toggle");
-
-      themeToggleBtn.addEventListener("click", function () {
-        // toggle icons inside button
-        themeToggleDarkIcon.classList.toggle("hidden");
-        themeToggleLightIcon.classList.toggle("hidden");
-
-        // if set via local storage previously
-        if (localStorage.getItem("color-theme")) {
-          if (localStorage.getItem("color-theme") === "light") {
-            document.documentElement.classList.add("dark");
-            localStorage.setItem("color-theme", "dark");
-          } else {
-            document.documentElement.classList.remove("dark");
-            localStorage.setItem("color-theme", "light");
-          }
-
-          // if NOT set via local storage previously
-        } else {
-          if (document.documentElement.classList.contains("dark")) {
-            document.documentElement.classList.remove("dark");
-            localStorage.setItem("color-theme", "light");
-          } else {
-            document.documentElement.classList.add("dark");
-            localStorage.setItem("color-theme", "dark");
-          }
-        }
-      });
-    </script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.esm.min.js"></script>
+    <script src="./assets/scripts.js"></script>
   </body>
 </html>
