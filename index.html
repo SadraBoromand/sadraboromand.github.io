@@ -3,7 +3,7 @@
     <!-- seo tags -->
     <meta name="theme-color" content="#0d6efd" />
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="./assets/images/minLogo.png" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/minLogo.webp" />
     <meta
       name="description"
       content="محمد صدرا برومند ، برنامه نویس فول استک و برنامه نویس اندروید"
@@ -22,32 +22,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>محمد صدرا برومند</title>
     <!-- css -->
-    <link rel="stylesheet" href="./css/bootstrap.rtl.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./assets/input.css" />
     <link
       rel="stylesheet"
-      href="./bootstrap-icons-1.13.1/bootstrap-icons.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
-    <style>
-      .bg1 {
-        background: linear-gradient(120deg, #1b4ef7, #b424fc);
-      }
-      .underline {
-        height: 5px;
-        align-self: center;
-        border-radius: 25px;
-      }
-      .text-justify {
-        text-align: justify;
-      }
-      .imgback {
-        width: 100%;
-        border-radius: 1rem;
-      }
-      .service-item:hover {
-        background: #bad6ff;
-      }
-    </style>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <nav
@@ -67,7 +53,7 @@
         </button>
         <a class="navbar-brand" href="/">
           <img
-            src="./assets/images/minLogo.png"
+            src="./assets/images/minLogo.webp"
             alt="logo"
             width="50"
             height="50"
@@ -161,17 +147,19 @@
           <div class="d-none d-sm-block h-100">
             <div class="d-flex align-items-center h-100">
               <img
-                src="./assets/background.jpg"
+                loading="lazy"
+                src="./assets/background.webp"
                 alt="background"
                 class="imgback"
                 style="height: 100%; width: 65%"
               />
               <img
-                src="./assets/images/20241206_123739.jpg"
+                loading="lazy"
+                src="./assets/images/20241206_123739.webp"
                 alt="Mohammad sadra boromand"
                 loading="lazy"
                 width="150"
-                class="rounded-4"
+                class="rounded-pill"
                 style="margin-right: -5rem"
               />
             </div>
@@ -180,14 +168,15 @@
           <div class="d-sm-none h-100">
             <div class="d-flex flex-column align-items-center h-100">
               <img
-                src="./assets/background.jpg"
+                loading="lazy"
+                src="./assets/background.webp"
                 alt="background"
                 class="imgback"
                 width="100%"
                 style="height: 100%"
               />
               <img
-                src="./assets/images/20241206_123739.jpg"
+                src="./assets/images/20241206_123739.webp"
                 alt="Mohammad sadra boromand"
                 loading="lazy"
                 width="180"
@@ -218,14 +207,14 @@
             class="d-flex flex-row justify-content-evenly flex-wrap gap-4 mt-4"
           >
             <img
-              src="./assets/images/LazyLoad/LL (1).png"
+              src="./assets/images/LazyLoad/LL (1).webp"
               class="img img-thumbnail"
               alt="LL 1"
               width="45"
               loading="lazy"
             />
             <img
-              src="./assets/images/LazyLoad/LL (2).png"
+              src="./assets/images/LazyLoad/LL (2).webp"
               class="img img-thumbnail"
               alt="LL 2"
               width="40"
@@ -233,7 +222,7 @@
               loading="lazy"
             />
             <img
-              src="./assets/images/LazyLoad/LL (3).png"
+              src="./assets/images/LazyLoad/LL (3).webp"
               class="img img-thumbnail"
               alt="LL 3"
               width="40"
@@ -241,7 +230,7 @@
               loading="lazy"
             />
             <img
-              src="./assets/images/LazyLoad/LL (4).png"
+              src="./assets/images/LazyLoad/LL (4).webp"
               class="img img-thumbnail"
               alt="LL 4"
               width="40"
@@ -249,7 +238,7 @@
               loading="lazy"
             />
             <img
-              src="./assets/images/LazyLoad/LL (5).png"
+              src="./assets/images/LazyLoad/LL (5).webp"
               class="img img-thumbnail"
               alt="LL 5"
               width="40"
@@ -257,7 +246,7 @@
               loading="lazy"
             />
             <img
-              src="./assets/images/LazyLoad/LL (6).png"
+              src="./assets/images/LazyLoad/LL (6).webp"
               class="img img-thumbnail"
               alt="LL 6"
               width="40"
@@ -275,21 +264,25 @@
       <div class="container px-5">
         <div class="row align-items-center justify-content-evenly">
           <a
+            target="_blank"
             class="col-md-3 col-3 mb-3 text-primary"
             href="https://linkedin.com/sadrabroo"
             ><i class="bi bi-linkedin fs-3"></i
           ></a>
           <a
+            target="_blank"
             class="col-md-3 col-3 mb-3 text-dark bg-white p-1 rounded-3"
             href="https://www.github.com/sadraboromand/"
             ><i class="bi bi-github fs-3"></i
           ></a>
           <a
+            target="_blank"
             class="col-md-3 col-3 mb-3 text-danger"
             href="mailto:sadrabroo@gmail.com"
             ><i class="bi bi-envelope-at-fill fs-3"></i
           ></a>
-         <!-- <a
+          <!-- <a
+            target="_blank"
             class="col-md-3 col-12 mb-3 btn btn-outline-primary"
             href="./assets/sadra.pdf"
           >
@@ -753,21 +746,24 @@
       <div class="row">
         <div class="col-md-4 mb-3">
           <img
-            src="./assets/images/tagdirname/t (1).jpg"
+            loading="lazy"
+            src="./assets/images/tagdirname/t (1).webp"
             class="img-fluid img-thumbnail"
             alt="تقدیرنامه"
           />
         </div>
         <div class="col-md-4 mb-3">
           <img
-            src="./assets/images/tagdirname/t (2).jpg"
+            loading="lazy"
+            src="./assets/images/tagdirname/t (2).webp"
             class="img-fluid img-thumbnail"
             alt="تقدیرنامه"
           />
         </div>
         <div class="col-md-4 mb-3">
           <img
-            src="./assets/images/tagdirname/t (3).jpg"
+            loading="lazy"
+            src="./assets/images/tagdirname/t (3).webp"
             class="img-fluid img-thumbnail"
             alt="تقدیرنامه"
           />
@@ -786,81 +782,91 @@
       <div class="row">
         <div class="col-md-3 col-6 mb-3">
           <img
-            src="./assets/images/certificates/CPP.jpg"
+            loading="lazy"
+            src="./assets/images/certificates/CPP.webp"
             class="img-fluid img-thumbnail"
-            alt="CPP.jpg"
+            alt="CPP.webp"
           />
         </div>
 
         <div class="col-md-3 col-6 mb-3">
           <img
-            src="./assets/images/certificates/CSharp.jpg"
+            loading="lazy"
+            src="./assets/images/certificates/CSharp.webp"
             class="img-fluid img-thumbnail"
-            alt="CSharp.jpg"
+            alt="CSharp.webp"
           />
         </div>
 
         <div class="col-md-3 col-6 mb-3">
           <img
-            src="./assets/images/certificates/HTML.jpg"
+            loading="lazy"
+            src="./assets/images/certificates/HTML.webp"
             class="img-fluid img-thumbnail"
-            alt="HTML.jpg"
+            alt="HTML.webp"
           />
         </div>
 
         <div class="col-md-3 col-6 mb-3">
           <img
-            src="./assets/images/certificates/IranianRed.jpg"
+            loading="lazy"
+            src="./assets/images/certificates/IranianRed.webp"
             class="img-fluid img-thumbnail"
-            alt="IranianRed.jpg"
+            alt="IranianRed.webp"
           />
         </div>
 
         <div class="col-md-3 col-6 mb-3">
           <img
-            src="./assets/images/certificates/JS.jpg"
+            loading="lazy"
+            src="./assets/images/certificates/JS.webp"
             class="img-fluid img-thumbnail"
-            alt="JS.jpg"
+            alt="JS.webp"
           />
         </div>
 
         <div class="col-md-3 col-6 mb-3">
           <img
-            src="./assets/images/certificates/ml1.jpg"
+            loading="lazy"
+            src="./assets/images/certificates/ml1.webp"
             class="img-fluid img-thumbnail"
-            alt="ml1.jpg"
+            alt="ml1.webp"
           />
         </div>
 
         <div class="col-md-3 col-6 mb-3">
           <img
-            src="./assets/images/certificates/python.jpg"
+            loading="lazy"
+            src="./assets/images/certificates/python.webp"
             class="img-fluid img-thumbnail"
-            alt="python.jpg"
+            alt="python.webp"
           />
         </div>
 
         <div class="col-md-3 col-6 mb-3">
           <img
-            src="./assets/images/certificates/Responsive Web Design.jpg"
+            loading="lazy"
+            src="./assets/images/certificates/Responsive Web Design.webp"
             class="img-fluid img-thumbnail"
-            alt="Responsive Web Design.jpg"
+            alt="Responsive Web Design.webp"
           />
         </div>
 
         <div class="col-md-3 col-6 mb-3">
           <img
-            src="./assets/images/certificates/SQL.jpg"
+            loading="lazy"
+            src="./assets/images/certificates/SQL.webp"
             class="img-fluid img-thumbnail"
-            alt="SQL.jpg"
+            alt="SQL.webp"
           />
         </div>
 
         <div class="col-md-3 col-6 mb-3">
           <img
-            src="./assets/images/certificates/tf.jpg"
+            loading="lazy"
+            src="./assets/images/certificates/tf.webp"
             class="img-fluid img-thumbnail"
-            alt="tf.jpg"
+            alt="tf.webp"
           />
         </div>
       </div>
@@ -993,14 +999,16 @@
       <div class="row">
         <div class="col-md-3 col-6 mb-3">
           <img
-            src="./assets/images/workshops/ws (1).jpg"
+            loading="lazy"
+            src="./assets/images/workshops/ws (1).webp"
             class="img-fluid img-thumbnail"
             alt="کارگاه"
           />
         </div>
         <div class="col-md-3 col-6 mb-3">
           <img
-            src="./assets/images/workshops/ws (2).jpg"
+            loading="lazy"
+            src="./assets/images/workshops/ws (2).webp"
             class="img-fluid img-thumbnail"
             alt="کارگاه"
           />
@@ -1168,9 +1176,11 @@
       </p>
     </footer>
 
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/bootstrap.esm.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
     <script src="./assets/scripts.js"></script>
   </body>
 </html>
